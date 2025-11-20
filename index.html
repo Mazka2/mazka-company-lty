@@ -1,31 +1,196 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mazka Company LTY</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mazka Company LTY — Cloud Engineering</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='%237c3aed'/><stop offset='1' stop-color='%232563eb'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='58' font-size='46' text-anchor='middle' fill='white' font-family='Inter'>M</text></svg>">
 </head>
-<body>
 
-<header class="header">
-    <h1>Mazka Company LTY</h1>
-    <p>Your trusted cloud & teamwork solutions provider.</p>
+<body>
+<!-- animated background layers -->
+<div class="bg-gradient">
+  <div class="g g1"></div>
+  <div class="g g2"></div>
+  <div class="g g3"></div>
+</div>
+
+<header class="container">
+  <div class="nav">
+    <div class="brand">
+      <div class="logo">M</div>
+      <div>
+        <div class="brand-name">Mazka Company LTY</div>
+        <div class="brand-sub">Cloud · Engineering · Collaboration</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#requirements">Requirements</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="controls">
+      <button id="prevPalette" class="palette-btn">◀</button>
+      <button id="playPause" class="play-btn">Pause</button>
+      <button id="nextPalette" class="palette-btn">▶</button>
+    </div>
+  </div>
 </header>
 
-<section class="requirements">
-    <h2>Requirements</h2>
-    <ul>
-        <li>Experience with cloud platforms (Azure & Google Cloud)</li>
-        <li>Strong problem-solving skills</li>
-        <li>Excellent communication and teamwork skills</li>
-    </ul>
+<main>
+
+<!-- HERO -->
+<section class="container hero">
+  <div class="hero-left fade-up delay-1">
+    <div class="kicker">Trusted Cloud Experts</div>
+    <h1>Mazka Company LTY — Engineering modern cloud experiences at scale</h1>
+    <p class="lead">
+      We combine cloud platform expertise with product-driven engineering to help teams move faster,
+      reduce cost, and ship reliable systems. Specialized in Azure and Google Cloud.
+    </p>
+
+    <div class="cta-row">
+      <button class="btn" onclick="scrollToContact()">Work with us</button>
+      <button class="btn secondary" onclick="document.getElementById('requirements').scrollIntoView({behavior:'smooth'})">See requirements</button>
+    </div>
+
+    <div class="tags">
+      <span>Cloud Architecture</span>
+      <span>SRE & DevOps</span>
+      <span>Security-first</span>
+    </div>
+  </div>
+
+  <aside class="hero-card fade-up delay-2">
+    <div class="mock"></div>
+  </aside>
 </section>
 
-<footer>
-    <p>Shesa 🔥💯</p>
+<!-- SERVICES -->
+<section class="container" id="services">
+  <div class="section-title">
+    <h3>Services</h3>
+    <span class="muted">How we help organizations</span>
+  </div>
+
+  <div class="grid cols-3 services fade-up delay-1">
+    <div class="card">
+      <h4>Cloud Architecture & Migration</h4>
+      <p class="muted">Design resilient, cost-optimal architectures and lead migrations to Azure and Google Cloud with minimal disruption.</p>
+    </div>
+
+    <div class="card">
+      <h4>SRE & Platform Engineering</h4>
+      <p class="muted">Implement observability, automation, and incident playbooks to keep services reliable and teams productive.</p>
+    </div>
+
+    <div class="card">
+      <h4>Security & Compliance</h4>
+      <p class="muted">Security-first design, IAM best practices, and compliance support for cloud workloads and pipelines.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REQUIREMENTS -->
+<section class="container" id="requirements">
+  <div class="section-title">
+    <h3>Requirements</h3>
+    <span class="muted">What we look for / what matters</span>
+  </div>
+
+  <div class="requirements-card fade-up delay-2">
+    <h4>Requirements:</h4>
+    <ol>
+      <li>Experience with cloud platforms (Azure and Google Cloud)</li>
+      <li>Strong problem-solving skills</li>
+      <li>Excellent communication and teamwork skills</li>
+    </ol>
+
+    <div class="muted" style="margin-top:10px">Shesa 🔥💯</div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="container" id="about">
+  <div class="section-title">
+    <h3>About Mazka Company LTY</h3>
+    <span class="muted">Mission & values</span>
+  </div>
+
+  <div class="grid about-grid">
+    <div class="fade-up delay-1">
+      <p class="muted">
+        Mazka Company LTY is a forward-looking engineering firm specializing in cloud-native systems, 
+        developer experience, and operational excellence.
+      </p>
+
+      <div class="grid cols-2 small-gap">
+        <div class="card">
+          <strong>Principles</strong>
+          <p class="muted">Observability, automation, and data-informed decisions guide our work.</p>
+        </div>
+
+        <div class="card">
+          <strong>Approach</strong>
+          <p class="muted">Small cross-functional squads, iterative delivery, and strong documentation.</p>
+        </div>
+      </div>
+    </div>
+
+    <aside class="card fade-up delay-2">
+      <strong>Testimonials</strong>
+      <blockquote class="muted">
+        "Mazka's team migrated our core services to a multi-cloud setup with no downtime — their engineers are top-tier."
+      </blockquote>
+      <span class="muted">— Product Lead, fintech</span>
+    </aside>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="container" id="contact">
+  <div class="section-title">
+    <h3>Contact</h3>
+    <span class="muted">Start a conversation</span>
+  </div>
+
+  <div class="contact-grid fade-up delay-1">
+    <form id="contactForm" class="card">
+      <label>Name</label>
+      <input type="text" name="name" id="name" required />
+
+      <label>Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <label>Message</label>
+      <textarea name="message" id="message" required></textarea>
+
+      <button class="btn" type="submit">Send message</button>
+      <div id="formStatus" class="muted"></div>
+    </form>
+
+    <aside class="card">
+      <strong>Reach us</strong>
+      <p class="muted">hi@mazka.example</p>
+      <p class="muted">+1 (555) 987-6543</p>
+
+      <strong>Office</strong>
+      <p class="muted">Remote-first • HQ: Cape Town</p>
+    </aside>
+  </div>
+</section>
+
+</main>
+
+<footer class="container">
+  <span class="muted">© <span id="year"></span> Mazka Company LTY</span>
+  <span class="muted">Animated palettes • Smooth UI</span>
 </footer>
 
 <script src="script.js"></script>
 </body>
-  </html>
+          </html>
