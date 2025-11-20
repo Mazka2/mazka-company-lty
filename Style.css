@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #b38773;
+    color: white;
+    animation: fadeIn 1.5s ease;
+}
+
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(3px);
+    animation: slideDown 1s ease;
+}
+
+.requirements {
+    padding: 20px;
+    animation: fadeUp 1.2s ease;
+}
+
+.requirements ul li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.9;
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeUp {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
